@@ -5,46 +5,47 @@ pygame.init()
 win = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption('Dungeon Advantures')
 bg = pygame.image.load('bg.jpg')
-walkRight = [pygame.image.load('anims/adventurer-run-right-00.png'),
-pygame.image.load('anims/adventurer-run-right-00.png'),
-pygame.image.load('anims/adventurer-run-right-01.png'),
-pygame.image.load('anims/adventurer-run-right-01.png'),
-pygame.image.load('anims/adventurer-run-right-02.png'),
-pygame.image.load('anims/adventurer-run-right-02.png'),
-pygame.image.load('anims/adventurer-run-right-03.png'),
-pygame.image.load('anims/adventurer-run-right-03.png'),
-pygame.image.load('anims/adventurer-run-right-03.png'),
-pygame.image.load('anims/adventurer-run-right-04.png'),
-pygame.image.load('anims/adventurer-run-right-04.png'),
-pygame.image.load('anims/adventurer-run-right-05.png'),
-pygame.image.load('anims/adventurer-run-right-05.png')]
 
-walkLeft = [pygame.image.load('anims/adventurer-run-left-00.png'),
-pygame.image.load('anims/adventurer-run-left-00.png'),
-pygame.image.load('anims/adventurer-run-left-01.png'),
-pygame.image.load('anims/adventurer-run-left-01.png'),
-pygame.image.load('anims/adventurer-run-left-02.png'),
-pygame.image.load('anims/adventurer-run-left-02.png'),
-pygame.image.load('anims/adventurer-run-left-03.png'),
-pygame.image.load('anims/adventurer-run-left-03.png'),
-pygame.image.load('anims/adventurer-run-left-03.png'),
-pygame.image.load('anims/adventurer-run-left-04.png'),
-pygame.image.load('anims/adventurer-run-left-04.png'),
-pygame.image.load('anims/adventurer-run-left-05.png'),
-pygame.image.load('anims/adventurer-run-left-05.png')]
+walkRight = [pygame.image.load('assets/adventurer-run-right-00.png'),
+             pygame.image.load('assets/adventurer-run-right-00.png'),
+             pygame.image.load('assets/adventurer-run-right-01.png'),
+             pygame.image.load('assets/adventurer-run-right-01.png'),
+             pygame.image.load('assets/adventurer-run-right-02.png'),
+             pygame.image.load('assets/adventurer-run-right-02.png'),
+             pygame.image.load('assets/adventurer-run-right-03.png'),
+             pygame.image.load('assets/adventurer-run-right-03.png'),
+             pygame.image.load('assets/adventurer-run-right-03.png'),
+             pygame.image.load('assets/adventurer-run-right-04.png'),
+             pygame.image.load('assets/adventurer-run-right-04.png'),
+             pygame.image.load('assets/adventurer-run-right-05.png'),
+             pygame.image.load('assets/adventurer-run-right-05.png')]
 
-playerStand = [pygame.image.load('anims/adventurer-idle-2-00.png'),
-pygame.image.load('anims/adventurer-idle-2-00.png'),
-pygame.image.load('anims/adventurer-idle-2-01.png'),
-pygame.image.load('anims/adventurer-idle-2-01.png'),
-pygame.image.load('anims/adventurer-idle-2-02.png'),
-pygame.image.load('anims/adventurer-idle-2-02.png'),
-pygame.image.load('anims/adventurer-idle-2-03.png'),
-pygame.image.load('anims/adventurer-idle-2-03.png')]
+walkLeft = [pygame.image.load('assets/adventurer-run-left-00.png'),
+            pygame.image.load('assets/adventurer-run-left-00.png'),
+            pygame.image.load('assets/adventurer-run-left-01.png'),
+            pygame.image.load('assets/adventurer-run-left-01.png'),
+            pygame.image.load('assets/adventurer-run-left-02.png'),
+            pygame.image.load('assets/adventurer-run-left-02.png'),
+            pygame.image.load('assets/adventurer-run-left-03.png'),
+            pygame.image.load('assets/adventurer-run-left-03.png'),
+            pygame.image.load('assets/adventurer-run-left-03.png'),
+            pygame.image.load('assets/adventurer-run-left-04.png'),
+            pygame.image.load('assets/adventurer-run-left-04.png'),
+            pygame.image.load('assets/adventurer-run-left-05.png'),
+            pygame.image.load('assets/adventurer-run-left-05.png')]
 
-jump = [pygame.image.load('anims/adventurer-crnr-jmpr-00.png'),
-pygame.image.load('anims/adventurer-crnr-jmpr-01.png'),
-pygame.image.load('anims/adventurer-crnr-jmpr-02.png')]
+playerStand = [pygame.image.load('assets/adventurer-idle-2-00.png'),
+               pygame.image.load('assets/adventurer-idle-2-00.png'),
+               pygame.image.load('assets/adventurer-idle-2-01.png'),
+               pygame.image.load('assets/adventurer-idle-2-01.png'),
+               pygame.image.load('assets/adventurer-idle-2-02.png'),
+               pygame.image.load('assets/adventurer-idle-2-02.png'),
+               pygame.image.load('assets/adventurer-idle-2-03.png'),
+               pygame.image.load('assets/adventurer-idle-2-03.png')]
+
+jump = [pygame.image.load('assets/adventurer-crnr-jmpr-00.png'),
+        pygame.image.load('assets/adventurer-crnr-jmpr-01.png'),
+        pygame.image.load('assets/adventurer-crnr-jmpr-02.png')]
 
 class Hero:
     x = 30
