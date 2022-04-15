@@ -156,7 +156,6 @@ fallLight = [pygame.image.load('assets/adventurer/fallLeft/adventurer-falll-00.p
     pygame.image.load('assets/adventurer/fallLeft/adventurer-falll-01.png'),
     pygame.image.load('assets/adventurer/fallLeft/adventurer-falll-01.png')]
 
-attackLeft.
 
 # win.blit(walkLeft[self.animCount % 13], (self.x, self.y))
 # self.animCount += 1
