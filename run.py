@@ -24,10 +24,6 @@ while player.alive:
         if event.type == pygame.QUIT:
             player.live = False
 
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                player.idle = True
-
     keys_pressed = pygame.key.get_pressed()
 
     if keys_pressed[pygame.K_f]:
